@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Project</title>
-    <link rel="stylesheet" href="style.css" /> 
-  </head>
-  <h1>Advanced Do To List Project</h1>
-  <body>
-    <header class="Header">
+    <title>To Do Project</title>
+</head>
 
+<body>
 
-      <nav class="navbar">
-        <!-- <div class="nav"> --> 
-        <button class="all">All</button>  
-        <button class="red">Red</button>
-        <button class="yel">Yellow</button>
-        <button class="Blue">Blue</button>
-        <button class="black">Black</button>
-        <i class="fa fa-check" class="check"></i>  
-      </nav>
-      <button id="creat" onclick="show()"> Create Task</button>
-    </header>
-    </div> -->
+    <div class="main">
+        <header>
+            <div class="colorselector">
+                <h2 id="all" onclick="">All</h2>
+                <div id="red" class="select" >red</div>
+                <div id="yellow" class="select" >yellow</div>
+                <div id="blue" class="select" >yellow</div>
+                <div id="black" class="select" >black</div>
+                <i class="fa fa-check" id="check"></i>
 
-    <!-- <h3 class="countshow">total no.of box : <strong id="countbox">0</strong></h3>
+            </div>
+            <h2 id="create" onclick="show()">create task</h2>
+        </header>
 
-    <table id="verifybox">
-        <tr>
-            <th id="tablehead"></th>
-        </tr>
-    </table> -->
+        <!-- <h3 class="countshow">total no.of box : <strong id="countbox">0</strong></h3>
 
-    <div id="checkbox">
+        <table id="verifybox">
+            <tr>
+                <th id="tablehead"></th>
+            </tr>
+        </table> -->
 
-         <div id="box">     <!--  //all locking box  -->
-            <h3 id="taskname">Write Task</h3>
-            <div class="icons">
-                <div class="actionicon" id="actionicon">
-                   
-                    <i class="fa fa-check" id="check1" onclick="checked()"></i>
-                    <i class="fa fa-pencil" id="edit" onclick="edittask()"></i>
-                    <i class="fa fa-trash-o" id="delete" onclick="remove()"></i>
-                    <i class="	fa fa-square-o" id="changecolor" onclick="changecolors()"></i>
+        <div id="checkbox">
+
+             <!-- <div id="box" style="border-top: 10px solid ; border-top-color: blue;">
+                <h2 id="taskname"></h2>
+                <div class="icons">
+                    <div class="actionicon" id="actionicon">
+                        <i class="fa fa-check" id="check2" onclick="checked()"></i>
+                        <i class="fa fa-pencil" id="edit" onclick="editTaskName()"></i>
+                        <i class="fa fa-trash-o" id="delete" onclick="remove()"></i>
+                        <i class="fa fa-square" id="changecolor" onclick="changecolors()"></i>
+                    </div>
+                    <div class="lockicon">
+                        <i class="fa fa-lock" id="lock" onclick="unlock()"></i>
+                        <i class="fa fa-unlock" id="unlock" onclick="lock()"></i>
+                    </div>
                 </div>
-                <div class="lock">
-                    <i class="fa fa-lock" id="lock" onclick="unlock()"></i>
-                    <i class="fa fa-unlock" id="unlock" onclick="lock()"></i>
+            </div> -->
+            
+            
+           
+        </div>
+
+
+        <main id="popmain">
+            <div id="popbox">
+                <div id="inputarea">
+                    <input type="text" id="inputvalue" placeholder="please enter task!">
+                    <div class="btnarea">
+                        <button type="submit" id="done" onclick="doning()">done</button>
+                    </div>
+                </div>
+                <div id="colorarea">
+                    <div class="color2">
+                        <div id="red1" class="select1" onclick="redborder()"></div>
+                        <div id="yellow1" class="select1" onclick="yellowborder()"></div>
+                        <div id="blue1" class="select1" ></div>
+                        <div id="black1" class="select1" onclick="blackborder()"></div>
+                    </div>
+                    <i class="fa fa-close" id="close" onclick="closing()"></i>
                 </div>
             </div>
-         </div>   <!--   box div  -->
+        </main>
     </div>
 
-     <main id="popup">  <!-- pop Area for <textarea name="" id="" cols="30" rows="10"></textarea> -->
-        <div id="popbox">
-            <div id="inputarea">
-                <textarea name="" id=" inputvalue" cols="35" rows="11"  placeholder="Write Something"></textarea>
-                <div class="btnarea">
-                    <button type="submit" id="done" onclick="doning()">done</button>
-                </div>
-            </div>
+    <script src="JS.js"></script>
 
-            <div id="colorarea">
-             <div class="color">        <!--//color2 -->
-                    <div id="red1" class="btn" onclick="redtop"></div>
-                    <div id="yellow1" class="btn" onclick="yellowtop"></div>
-                    <div id="blue1" class="btn" onclick="bluetop"></div>
-                    <div id="black1" class="btn" onclick="blacktop"></div>
-                </div>
-                <i class="fa fa-close" id="close" onclick="closing()"></i>
-            </div>
-        </div>
-     </main>   <!-- close textarea hare -->
-</div>
-  </body>
-  <script src="JS.js"></script>
+</body>
+
 </html>

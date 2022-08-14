@@ -1,104 +1,132 @@
-.navbar {
-  background-color: aqua;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; 
-  border: 2px solid blue;
-  /* width: 70%;
-  height: 40%; */
-  /* border-radius: 30%; */
-}
-#creat {
-  float: right;
-  justify-content: flex-end;
-  background-color: rgb(255, 119, 0);
-  color: antiquewhite;
-  border: 2px solid rgb(30, 255, 0);
-  width: 100px;
-  height: 40px;
-  border-radius: 50px;
-}
-#creat:hover{
-    color: black;
-    background-color: blue;
-    transition: .5s;
- 
-}
-.all{
-    width: 70px;
-  height: 40px;
-  border-radius: 50px;
-}
-/* .check{
-    /* width: 70px;
-  height: 40px;
-  border-radius: 50px;
-  color: blue; */
-  /* font-size: larger;
-} */ 
-header {
-  background-color: rgb(102, 96, 121);
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.black
- {
-  background-color: rgb(0, 0, 0);
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-  width: 70px;
-  height: 40px;
-  border-radius: 50px;
+* {
+  margin: 0%;
+  padding: 0%;
+  text-transform: capitalize;
 }
 
-.red {
-  background-color: rgb(249, 5, 5);
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-  width: 70px;
-  height: 40px;
-  border-radius: 50px;
+body {
+  max-width: 100%;
+  height: 100vh;
 }
-/* .red-i {
-  background-color: rgb(249, 5, 5);
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-} */
-.yel {
-  background-color: rgb(220, 249, 5);
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-  width: 70px;
-  height: 40px;
-  border-radius: 50px;
+
+header {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
 }
-.Blue {
-  background-color: rgb(5, 5, 249);
-  padding: 5px;
-  border-radius: 10px;
-  color: white;
-  width: 70px; 
-  height: 40px;
+
+.colorselector {
+  display: flex;
+  background-color: aliceblue;
+  padding: 10px 30px;
   border-radius: 50px;
+  align-items: center;
 }
+
+.select {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+
+
+#red {
+  background-color: red;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#yellow {
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#blue {
+  background-color: blue;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#black {
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#all {
+  border: 2px solid rgb(148, 145, 145);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#check {
+  color: goldenrod;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+#create {
+  color: white;
+  background-color: gold;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+#create:hover{
+  background-color: green;
+  transition: .5s;
+}
+
+.countshow{
+  /* background-color: aquamarine; */
+  float: right;
+  margin: 10px 40px;
+  word-spacing: 4px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid red;
+}
+strong{
+  color: red;
+  font-size: 30px;
+}
+
+
+#verifybox {
+  /* background-color: aquamarine; */
+  display: none;
+  width: 100%;
+}
+table tr {
+  width: 100%;
+}
+table tr th{
+  display: flex;
+  width: 100%;
+}
+.tableheadbox{
+  width: 210%;
+  margin-top: 50px;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 86vh;
   display: none;
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
-/* main{
-    display: block;
-} */
 
 #popbox {
   position: fixed;
@@ -109,62 +137,63 @@ main {
   border-radius: 20px;
   width: 40%;
   height: 50vh;
-  /* display: none; */
   border: 3px solid gray;
 }
 
-.btn {
-  margin: 40px 0px;
+.select1 {
+  margin:40px 0px;
   cursor: pointer;
 }
-.btn:hover {
-  border: 2px solid white;
-  transition: 0.5s;
+.select1:hover {
+ border: 2px solid white;
+ transition: .5s;
 }
 
 #red1 {
   background-color: red;
-  width: 70px;
+  width: 100px;
   height: 50px;
   border-radius: 50px;
 }
 
 #yellow1 {
   background-color: yellow;
-  width: 70px;
+  width: 100px;
   height: 50px;
   border-radius: 50px;
 }
 
 #blue1 {
   background-color: blue;
-  width: 70px;
+  width: 100px;
   height: 50px;
   border-radius: 50px;
 }
 
 #black1 {
   background-color: black;
-  width: 70px;
+  width: 100px;
   height: 50px;
   border-radius: 50px;
   border: 2px solid white;
 }
 
 #inputarea {
-  width: 80%;
+  width: 70%;
 }
 
-#inputarea textarea {
+#inputarea input {
   background-color: transparent;
   border-style: none;
   font-size: 20px;
-  padding: 20px 0px 0px 30px;
+  padding: 20px 190px 250px 30px;
   outline: none;
   color: white;
+  letter-spacing: 1px;
+  
 }
 
-textarea::placeholder {
+input::placeholder {
   color: white;
 }
 
@@ -176,23 +205,23 @@ textarea::placeholder {
   align-items: center;
   border-radius: 20px;
 }
-#close { 
-    color: white;
-    align-self: flex-start;
-    position: relative;
-    top: 3%;
-    /* left: 10%; */
-  }
-
-#close:hover{
-    color:rgb(255, 0, 43)
+#colorarea i{
+  color: white;
+  align-self: flex-start;
+  position: relative;
+  top: 3%;
+  left:10%;
 }
+#colorarea i:hover{
+  color: red;
+}
+
 #done {
   padding: 10px 20px;
   background-color: goldenrod;
   border-style: none;
   border-radius: 50px;
-  color: black;
+  color: white;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
@@ -200,22 +229,22 @@ textarea::placeholder {
 
 #done:hover {
   background-color: green;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .btnarea {
   display: flex;
   justify-content: center;
 }
-#checkbox {
+#checkbox{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#box {
-  width: 40%;
+#box{
+  width: 25%;
   background-color: skyblue;
   height: 45vh;
   border-top: 20px solid red;
@@ -223,46 +252,58 @@ textarea::placeholder {
   margin: 40px 40px;
 }
 
-.icons {
+.icons{
   display: flex;
   justify-content: space-around;
-  align-self: end;
-  position: relative;
-  top: 60%;
+align-self: end;
+position: relative;
+top: 75%;
 }
-.actionicon {
-  display: none;    /* <--for lock display: -->;*/
+.actionicon{
+  display: none;
 }
-.actionicon i {
+.actionicon i{
   margin: 0px 10px;
   font-size: 20px;
   cursor: pointer;
 }
-.lock i {
+.lockicon i{
   font-size: 35px;
   align-self: center;
   cursor: pointer;
 }
-#unlock {
+/* #unlock{
   display: none;
-}
+} */
 
-#check1 {
+#check2{
   color: green;
 }
-#edit {
-  color: rgb(55, 9, 241);
+#edit{
+  color: white;
 }
-#delete {
+#delete{
   color: red;
 }
-#changecolor {
-  color: rgb(255, 225, 0);
+#changecolor{
+  color: red;
 }
 
-#taskname {
+#taskname{
   margin-top: 20px;
   text-align: center;
   letter-spacing: 1px;
   font-weight: bolder;
 }
+
+
+
+
+
+
+
+
+
+
+
+
