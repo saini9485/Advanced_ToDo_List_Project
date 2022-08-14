@@ -9,30 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>To Do Project</title>
 </head>
-
+<h1> Advanced Do To App</h1>
 <body>
 
     <div class="main">
         <header>
-            <div class="colorselector">
+            <div class="filter">
                 <h2 id="all" onclick="">All</h2>
-                <div id="red" class="select" >red</div>
-                <div id="yellow" class="select" >yellow</div>
-                <div id="blue" class="select" >yellow</div>
-                <div id="black" class="select" >black</div>
+                <div id="red" class="btn1" ></div>
+                <div id="yellow" class="btn1" ></div>
+                <div id="blue" class="btn1" ></div>
+                <div id="black" class="btn1" ></div>
                 <i class="fa fa-check" id="check"></i>
 
             </div>
-            <h2 id="create" onclick="show()">create task</h2>
+            <h3 id="create" onclick="inter()">create task</h3>
         </header>
 
-        <!-- <h3 class="countshow">total no.of box : <strong id="countbox">0</strong></h3>
-
-        <table id="verifybox">
-            <tr>
-                <th id="tablehead"></th>
-            </tr>
-        </table> -->
 
         <div id="checkbox">
 
@@ -57,20 +50,20 @@
         </div>
 
 
-        <main id="popmain">
+        <main id="popup">
             <div id="popbox">
                 <div id="inputarea">
-                    <input type="text" id="inputvalue" placeholder="please enter task!">
+                    <input type="text" id="inputvalue" placeholder="write somethings">
                     <div class="btnarea">
-                        <button type="submit" id="done" onclick="doning()">done</button>
+                        <button type="submit" id="done" onclick="complete()">done</button>
                     </div>
                 </div>
                 <div id="colorarea">
                     <div class="color2">
-                        <div id="red1" class="select1" onclick="redborder()"></div>
-                        <div id="yellow1" class="select1" onclick="yellowborder()"></div>
-                        <div id="blue1" class="select1" ></div>
-                        <div id="black1" class="select1" onclick="blackborder()"></div>
+                        <div id="red1" class="btn" onclick="redtop()"></div>
+                        <div id="yellow1" class="btn" onclick="yellowtop()"></div>
+                        <div id="blue1" class="btn" ></div>
+                        <div id="black1" class="btn" onclick="blacktop()"></div>
                     </div>
                     <i class="fa fa-close" id="close" onclick="closing()"></i>
                 </div>

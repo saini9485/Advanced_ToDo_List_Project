@@ -1,12 +1,11 @@
 var create = document.getElementById("create")
-var main = document.getElementById("popmain")
+var main = document.getElementById("popup")
 var mainpop = document.getElementById("popbox")
-var maincontainer = document.getElementById("checkbox")
-var inputvalue2 = document.getElementById("inputvalue")
+var allcontainer = document.getElementById("checkbox")
+var inputvalue = document.getElementById("inputvalue")
 var inputarea = document.getElementById("inputarea")
-var all = document.querySelector("body")
-function doning() {
-    var count = 0;
+function complete() {
+    // var count = 0;
 
     let box = document.createElement("div");
     box.setAttribute("id", "box");
@@ -65,11 +64,11 @@ function doning() {
     unlock_icon.style.display = "none"
     lock_icons.append(unlock_icon);
 
-    maincontainer.append(box);
+    allcontainer.append(box);
 
 
 
-    inputvalue2.value = "";
+    inputvalue.value = "";
 
     lock_icon.addEventListener("click", function lock() {
         action.style.display = "block";
@@ -86,9 +85,9 @@ function doning() {
 
     changecolor_icon.onclick = function changecolors() {
         let colors = ["yellow", "blue", "black", "red"];
-        let cc = ""
-        box.style.borderColor = cc + colors[count];
-        changecolor_icon.style.color = cc + colors[count];
+        let counter = ""
+        box.style.borderColor = counter + colors[count];
+        changecolor_icon.style.color = counter + colors[count];
         count++
     }
 
@@ -107,7 +106,7 @@ function doning() {
 
 
     delete_icon.onclick = function remove() {
-        maincontainer.removeChild(box)
+        allcontainer.removeChild(box)
         totalbox--;
         countbox.textContent = totalbox;
         if(totalbox==0){
@@ -117,18 +116,16 @@ function doning() {
     check1.onclick = function showchecked() {
         check1.style.color = "green";
         addBox.style.display = "block";
-        maincontainer.style.display="none";
+        allcontainer.style.display="none";
     }
 }
 
-function show() {
+function inter() {
     main.style.display = "block";
-    maincontainer.style.opacity = ".3";
 }
 
 function closing() {
     if (main.style.display = "block") {
         main.style.display = "none";
-        maincontainer.style.opacity = "1";
     }
 }
